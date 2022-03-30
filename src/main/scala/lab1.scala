@@ -1,6 +1,6 @@
 
 import scala.io.StdIn.readLine
-//щоб скоротити код
+
   object lab1 {
 
     def main(args: Array[String]): Unit = {
@@ -16,7 +16,7 @@ import scala.io.StdIn.readLine
     }
 
     def BuildMatrix(rows: Int, column: Int): List[List[Double]] = {
-      List.fill(column)(readLine().split(' ').map(_.toDouble).toList.take(rows))//мап щоб перевести в дабл
+      List.fill(column)(readLine().split(' ').map(_.toDouble).toList.take(rows))
     }
 
     def Addition(a: List[List[Double]], b: List[List[Double]]): List[List[Double]] = {
